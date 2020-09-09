@@ -6,7 +6,7 @@
   <p align="center">📊 将你的 WakaTime 每周统计更新在  pined gist / profile README  </p>
   <p align="center">  Golang 实现，查看原始版本  <a href="https://github.com/matchai/waka-box">waka-box</a>
   <p align="center">
-    <a href="https://github.com/YouEclipse/waka-box-go/workflows/Update%20gist%20with%20WakaTime%20stats/badge.svg?branch=master"><img src="https://github.com/YouEclipse/waka-box-go/workflows/Update%20gist%20with%20WakaTime%20stats/badge.svg?branch=master" alt="Update gist with WakaTime stats"></a>
+    <a href="https://github.com/zhulingbiezhi/waka-box-go/workflows/Update%20gist%20with%20WakaTime%20stats/badge.svg?branch=master"><img src="https://github.com/zhulingbiezhi/waka-box-go/workflows/Update%20gist%20with%20WakaTime%20stats/badge.svg?branch=master" alt="Update gist with WakaTime stats"></a>
   </p>
 </p>
 
@@ -37,15 +37,15 @@
 
 1. Fork 这个仓库
 
-1. 编辑 `.github/workflows/schedule.yml` 中的[环境变量](https://github.com/YouEclipse/waka-box-go/actions/runs/126970182/workflow#L17-L19) :
+1. 编辑 `.github/workflows/schedule.yml` 中的[环境变量](https://github.com/zhulingbiezhi/waka-box-go/actions/runs/126970182/workflow#L17-L19) :
 
-   > 如果是需要更新 github profile README,可以在 profile README 的仓库中创建 Action，具体配置参考 我的 [YouEclipse](https://github.com/YouEclipse/YouEclipse) 中的 [waka-box.yml](https://github.com/YouEclipse/YouEclipse/blob/master/.github/workflows/waka-box.yml).因为使用 **`repo`** 权限的token 来通过 API 更新仓库，可能会不安全，所以我的示例中使用 git 命令来更新，这样更加安全。
+   > 如果是需要更新 github profile README,可以在 profile README 的仓库中创建 Action，具体配置参考 我的 [zhulingbiezhi](https://github.com/zhulingbiezhi/zhulingbiezhi) 中的 [waka-box.yml](https://github.com/zhulingbiezhi/zhulingbiezhi/blob/master/.github/workflows/waka-box.yml).因为使用 **`repo`** 权限的token 来通过 API 更新仓库，可能会不安全，所以我的示例中使用 git 命令来更新，这样更加安全。
 
    - **UPDATE_OPTION:** 默认是 `GIST`,如果只想更新到某个 markdown 文件，设置为`MARKDOWN`,并可以忽略以下以 **GIST\_** 开头的环境变量，如果想同时更新 gist 和 markdown,设置为`GIST_AND_MARKDOWN`
    - **MARKDOWN_FILE:** 如果是更新到某个 markdown 文件，填写 markdown 文件名(包含相对路径或者绝对路径)
-   - **GIST_ID:** ID 是 gist url 的后缀 : `https://gist.github.com/YouEclipse/`**`9bc7025496e478f439b9cd43eba989a4`**.
+   - **GIST_ID:** ID 是 gist url 的后缀 : `https://gist.github.com/zhulingbiezhi/`**`9bc7025496e478f439b9cd43eba989a4`**.
 
-     **以下为可选参数,感谢[@AarynSmith](https://github.com/AarynSmith)的 PR([#11](https://github.com/YouEclipse/waka-box-go/pull/11))**
+     **以下为可选参数,感谢[@AarynSmith](https://github.com/AarynSmith)的 PR([#11](https://github.com/zhulingbiezhi/waka-box-go/pull/11))**
 
    - **GIST_BARSTYLE:** 进度条的背景样式. 默认是 "SOLIDLT"，其他样式包括 "SOLIDMD", "SOLIDDK" (黑色), "EMPTY" (空白) 和 "UNDERSCORE"（下划线）.
    - **GIST_BARLENGTH:** 条形图的长度. 默认 21. 设置为 -1 可以自动适配.

@@ -221,7 +221,7 @@ func TestBox_Readme(t *testing.T) {
 	ctx := context.Background()
 
 	filename := "test.md"
-	title := `####  <a href="https://gist.github.com/YouEclipse/9bc7025496e478f439b9cd43eba989a4" target="_blank">📊 Weekly development breakdown</a>`
+	title := `####  <a href="https://gist.github.com/zhulingbiezhi/9bc7025496e478f439b9cd43eba989a4" target="_blank">📊 Weekly development breakdown</a>`
 	content := []byte(`Go         🕓 18h3m ██████████████████████▉░░░░░ 82.1%
 YAML       🕓 1h47m ██▎░░░░░░░░░░░░░░░░░░░░░░░░░  8.1%
 JavaScript 🕓 40m   ▊░░░░░░░░░░░░░░░░░░░░░░░░░░░  3.1%

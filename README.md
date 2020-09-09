@@ -6,7 +6,7 @@
   <p align="center">📊 Update  pinned gist / profile README  to contain your weekly WakaTime stats. </p>
   <p align="center">  A Golang implementation, see the original version  <a href="https://github.com/matchai/waka-box">waka-box</a>
    <p align="center">
-    <a href="https://github.com/YouEclipse/waka-box-go/workflows/Update%20gist%20with%20WakaTime%20stats/badge.svg?branch=master"><img src="https://github.com/YouEclipse/waka-box-go/workflows/Update%20gist%20with%20WakaTime%20stats/badge.svg?branch=master" alt="Update gist with WakaTime stats"></a>
+    <a href="https://github.com/zhulingbiezhi/waka-box-go/workflows/Update%20gist%20with%20WakaTime%20stats/badge.svg?branch=master"><img src="https://github.com/zhulingbiezhi/waka-box-go/workflows/Update%20gist%20with%20WakaTime%20stats/badge.svg?branch=master" alt="Update gist with WakaTime stats"></a>
   </p>
 </p>
 
@@ -37,16 +37,16 @@ English | [简体中文](./README_zh.md)
 
 1. Fork this repo
 
-1. Edit the [environment variable](https://github.com/YouEclipse/waka-box-go/actions/runs/126970182/workflow#L17-L19) in `.github/workflows/schedule.yml`:
+1. Edit the [environment variable](https://github.com/zhulingbiezhi/waka-box-go/actions/runs/126970182/workflow#L17-L19) in `.github/workflows/schedule.yml`:
 
-   > For updating github profile README,you can follow [waka-box.yml](https://github.com/YouEclipse/YouEclipse/blob/master/.github/workflows/waka-box.yml) in [YouEclipse](https://github.com/YouEclipse/YouEclipse) to create a Action in your README repo.Remember it's unsafe to use token with **`repo`** scope for updating the repo, waka-box update the profile repo using git command in Github Action instead of using github API.
+   > For updating github profile README,you can follow [waka-box.yml](https://github.com/zhulingbiezhi/zhulingbiezhi/blob/master/.github/workflows/waka-box.yml) in [zhulingbiezhi](https://github.com/zhulingbiezhi/zhulingbiezhi) to create a Action in your README repo.Remember it's unsafe to use token with **`repo`** scope for updating the repo, waka-box update the profile repo using git command in Github Action instead of using github API.
 
    - **UPDATE_OPTION:** Default is `GIST`.For only update a markdown file ,set to`MARKDOWN`,and ignore environment variables with prefix **GIST\_** below.Set to `GIST_AND_MARKDOWN` updates both the gist and the markdown file.
    - **MARKDOWN_FILE:** The filename for the markdown file.
 
-   - **GIST_ID:** The ID portion from your gist url: `https://gist.github.com/YouEclipse/`**`9bc7025496e478f439b9cd43eba989a4`**.
+   - **GIST_ID:** The ID portion from your gist url: `https://gist.github.com/zhulingbiezhi/`**`9bc7025496e478f439b9cd43eba989a4`**.
 
-     **the following are optional, thanks [@AarynSmith](https://github.com/AarynSmith) for PR([#11](https://github.com/YouEclipse/waka-box-go/pull/11))**
+     **the following are optional, thanks [@AarynSmith](https://github.com/AarynSmith) for PR([#11](https://github.com/zhulingbiezhi/waka-box-go/pull/11))**
 
    - **GIST_BARSTYLE:** Background of the progress bar. Default is "SOLIDLT" other options include "SOLIDMD", "SOLIDDK" for medium and dark backgrounds, "EMPTY" for blank background, and "UNDERSCORE" for a line along the bottom.
    - **GIST_BARLENGTH:** Length of the progress bar. Default is 21. Set to -1 to auto size the bar.
